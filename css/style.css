@@ -1,5 +1,6 @@
 * {
-    font-family: 'Rubik';
+    font-family: "Rubik";
+    font-size: 16px;
 }
 
 html,
@@ -10,7 +11,7 @@ li {
     padding: 0;
 }
 
-.header {
+header {
     position: fixed;
     background: #000000;
     width: 100%;
@@ -22,35 +23,32 @@ li {
 .menu {
     position: relative;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 36px;
-    height: 30px;
+    height: 130px;
     display: flex;
-    margin-left: auto;
-    margin-right: 44px;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.menu__item {
+.menu__link {
     text-decoration: none;
     padding: 44px;
     padding-left: 41px;
     margin-right: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.menu__item:hover {
+.menu__link:hover {
     text-decoration: underline;
-    text-decoration-color: #FEC600;
+    text-decoration-color: #fec600;
 }
 
-.p1 {
+.section__title--grey {
     position: relative;
     width: 721px;
-    height: 226px;
+    /* height: 226px; */
     margin: 0 0 0 184px;
-    font-family: Rubik;
-    font-style: normal;
     font-weight: bold;
     font-size: 95px;
     line-height: 113px;
@@ -59,11 +57,23 @@ li {
     z-index: 2;
 }
 
-h1::before {
+.section__title {
+    position: relative;
+    width: 292px;
+    /* height: 113px; */
+    margin: 0 0 0 184px;
+    font-weight: bold;
+    font-size: 95px;
+    line-height: 113px;
+    color: #000000;
+}
+
+h1::before,
+h2::before {
     content: "";
     width: 148px;
     height: 33px;
-    background: #FEC600;
+    background: #fec600;
     float: left;
     position: absolute;
     left: -112px;
@@ -71,38 +81,37 @@ h1::before {
     z-index: -1;
 }
 
-.main {
+.p1 {
     background-image: url(../image/background.png);
     width: 100%;
     height: 100vh;
 }
 
-.button1 {
+.p1_button {
     /* position: relative; */
     width: 357px;
     height: 80px;
+    white-space: nowrap;
     margin-left: 548px;
     top: 100px;
-    background: #FEC600;
+    background: #fec600;
     border-radius: 5px;
-    font-family: Rubik;
-    font-style: normal;
     font-weight: bold;
     font-size: 50px;
     line-height: 59px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 29px 11px 28px;
 }
 
-.down {
+.p1_down {
     position: absolute;
     height: 50px;
     width: 50px;
     left: 50%;
     flex-direction: column;
     bottom: 5vh;
-    background: #FEC600;
+    background: #fec600;
     border-radius: 5px;
     transform: rotate(46.26deg);
     z-index: 0;
@@ -112,157 +121,90 @@ h1::before {
     width: 5px;
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(0, 0, 0);
     border-radius: 0px;
     background-color: rgb(0, 0, 0);
 }
 
- ::-webkit-scrollbar-thumb {
-    background: #FEC600;
+::-webkit-scrollbar-thumb {
+    background: #fec600;
     border-radius: 10px;
 }
 
-.title2 {
-    position: relative;
-    width: 292px;
-    height: 113px;
-    margin: 0 0 0 184px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 95px;
-    line-height: 113px;
-    color: #000000;
-    padding-top: 130px;
-}
-
-.text1_p2 {
-    text-align: left;
-    float: left;
-    /* height: 224px; */
-    width: 50%;
-    margin: 15px 51px 0 184px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
+.about__text {
+    /* float: left; */
+    width: 100%;
+    margin: 15px 51px 0 0;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
 }
 
-.line {
+.right-align {
+    text-align: right;
+}
+
+.about__column {
+    margin-left: 180px;
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
-.pictures {
+.about__pictures {
     display: flex;
-}
-
-.picture_1 {
-    width: 30%;
     height: auto;
     margin-left: 4px;
     object-fit: cover;
+    width: 95%;
 }
 
-.picture_2 {
-    width: 30%;
-    height: auto;
-    margin-left: 4px;
-    object-fit: cover;
+.cards {
+    margin-left: 184px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.line2 {
-    padding-left: 184px;
-}
-
-.text2_p2 {
-    text-align: right;
-    /* height: 224px; */
-    width: 50%;
-    margin: 15px 93px 0 34px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    display: block;
-}
-
-.card1 {
-    width: 471px;
-    /* height: 596px; */
+.card {
     padding: 21.79px 25px 22.63px 24px;
     box-shadow: 15px 2px 14px rgba(10, 10, 10, 0.35);
-    margin-right: 113px;
+    /* margin-right: 113px; */
+    max-width: 25%;
+    margin-bottom: 15px;
 }
 
-.title3 {
-    position: relative;
+.portfolio_text {
     margin-left: 184px;
-    width: 292px;
-    height: 113px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 95px;
-    line-height: 113px;
-    color: #000000;
-    padding-top: 130px;
-}
-
-.porfolio {
-    width: 100%;
-    /* height: 112px; */
-}
-
-.text_portfolio {
-    box-sizing: border-box;
-    margin-left: 184px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
 }
 
-.field_image {
-    width: 100%
+.card__image img {
+    max-width: 100%;
 }
 
-.item_h2 {
-    font-family: Rubik;
-    font-style: normal;
+.card__title {
     font-weight: bold;
     font-size: 34px;
     line-height: 40px;
+    margin: 10px 0;
 }
 
-.data {
-    font-family: Rubik;
+.date {
     font-style: italic;
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
     text-align: right;
     color: #0066ff;
+    display: block;
 }
 
-.item_title_text {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
+.card__text {
     font-size: 24px;
     line-height: 28px;
-}
-
-.card {
-    margin-left: 184px;
-    display: flex;
 }
 
 .p4 {
@@ -270,13 +212,11 @@ h1::before {
     height: 950px;
 }
 
-.title4 {
+.p4_title {
     position: relative;
     margin-left: 184px;
     width: 542px;
     height: 113px;
-    font-family: Rubik;
-    font-style: normal;
     font-weight: bold;
     font-size: 95px;
     line-height: 113px;
@@ -285,141 +225,188 @@ h1::before {
     z-index: 1;
 }
 
-.text_contact {
+.contact_text {
     width: 60%;
     height: 280px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.title_form {
+.contact_webform_title {
     width: 103px;
     height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
 }
 
-.form {
+.contact_section {
     display: flex;
     margin-left: 184px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
 }
 
-.webform {
+.contact_webform {
     margin-left: 27px;
     width: 30%;
 }
 
-.form_text {
+.contact_webform_text {
     width: 100%;
     height: 59px;
     background: #000000;
-    border: 4px solid #FFFFFF;
+    border: 4px solid #ffffff;
     box-sizing: border-box;
     border-radius: 5px;
-    color: #BDBDBD;
+    color: #bdbdbd;
     margin: 8px 0 13px 0;
     padding-left: 24px;
-    outline: #FEC600;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
 }
 
 input:hover {
-    border: 4px solid #FEC600;
+    border: 4px solid #fec600;
 }
 
 input:focus {
-    border: 4px solid #FEC600;
+    border: 4px solid #fec600;
 }
 
 input[type="checkbox"] {
-    transform: scale(3)
+    transform: scale(3);
+    margin-left: 15px;
+    background-color: #fec600;
 }
 
-.save {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
+.p4_webform_save {
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.buttons {
+.contact__buttons {
     width: 220px;
     height: 60px;
     border-radius: 5px;
     margin: 28px 22px 0 0;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     line-height: 43px;
-    color: #FFFFFF;
+    color: #ffffff;
     border: 0;
 }
 
-.button_1 {
-    background: #FEC600;
+.contact__button-yellow {
+    background: #fec600;
 }
 
-.button_2 {
-    background: #FE3D00;
+.contact__button-red {
+    background: #fe3d00;
 }
 
 footer {
-    width: 100%
+    width: 100%;
 }
 
 .footers {
-    height: 394px;
+    min-height: 394px;
     background: #000000;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 36px;
-    padding: 72px 0 0 0;
+    padding: 72px 136px 0 220px;
 }
 
-.footer_info {
+.footer__info {
     display: flex;
-    Justify-content: space-between
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer_menu {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
+.footer__info--col--link {
     font-size: 30px;
     line-height: 36px;
     text-decoration: none;
     color: #ffffff;
 }
 
-.footer_info_1 {
+.footer__info--col {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* margin-right: 155px; */
+    margin-bottom: 40px;
 }
 
-.footer_info_2 {
+.footer__year {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.year {
-    display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
     justify-content: center;
     margin-top: 95px;
+}
+
+@media (max-width: 1660px) {
+    .about__column,
+    .portfolio_text,
+    .cards,
+    .contact_section {
+        margin-left: 80px;
+    }
+    .footer_info_2 {
+        margin-left: 40px;
+    }
+    .footers {
+        padding: 72px 50px 0 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer_info_2 {
+        margin-left: 40px;
+    }
+    .about__column {
+        display: block;
+    }
+    .about__text {
+        width: 95%;
+    }
+    .section__title {
+        position: relative;
+    }
+    .right-align {
+        text-align: left;
+    }
+    .about__pictures {
+        flex-wrap: wrap;
+        justify-content: inherit;
+    }
+}
+
+@media (max-width: 900px) {
+    /* .cards {
+        flex-wrap: wrap;
+    } */
+}
+
+@media (max-width: 900px) {
+    .about__column,
+    .portfolio_text,
+    .cards,
+    .contact_section {
+        margin-left: 20px;
+    }
+    .section__title {
+        margin-left: 110px;
+        font-size: 4.9375rem;
+    }
+    h1::before,
+    h2::before {
+        width: 7.25rem;
+        height: 1.5625rem;
+        left: -90px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about__pictures {
+        justify-content: center;
+    }
 }

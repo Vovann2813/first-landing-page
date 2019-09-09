@@ -3,189 +3,191 @@
 
 <head>
     <title>Vovann</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
-        <div class="menu">
-            <a href="#p4" class="menu__item">Contact me</a>
-            <a href="#p3" class="menu__item">Portfolio</a>
-            <a href="#p2" class="menu__item">About</a>
-            <a href="#p1" class="menu__item">Home</a>
+    <!--   <header>
+        <nav class="menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#p4" class="menu__link">Contact me</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#p3" class="menu__link">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#p2" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#p1" class="menu__link">Home</a>
+                </li>
+            </ul>
+           
+        </nav>
+    </header>
+    <section class="p1">
+        <div class="p1_title">
+            <h1 class="p1_title_1" id="p1">The Basic HTML Template</h1>
         </div>
-    </div>
-    <div class="main">
-        <div class="title1">
-            <h1 class="p1" id="p1">The Basic HTML Template</h1>
-        </div>
-        <a href="#" class="button1"> Let`s GO! &#8594</a>
-        </form>
-        <a href="#p2" class="down"></a>
-    </div>
-    <div class="p2">
-        <h1 class="title2" id="p2">About</h1>
-        <div class="line1 line">
-            <p class="text1_p2">
+        <a href="#" class="p1_button"> Let`s GO! &#8594</a>
+        <a href="#p2" class="p1_down"></a>
+    </section> -->
+
+
+    <section class="about">
+        <h2 class="section__title" id="p2">About</h2>
+        <article class="about__column">
+            <p class="about__text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <div class="pictures">
-                <img src="image/kiwi.png" class="picture_1">
-                <img src="image/canteloupe.png" class="picture_1">
-                <img src="image/lemon.png" class="picture_1">
+            <div class="about__pictures">
+                <img src="image/kiwi.png" class="p2_picture_1">
+                <img src="image/canteloupe.png" class="p2_picture_1">
+                <img src="image/lemon.png" class="p2_picture_1">
             </div>
-        </div>
-        <div class="line2 line">
-            <div class="pictures">
-                <img src="image/kiwi.png" class="picture_2">
-                <img src="image/canteloupe.png" class="picture_2">
-                <img src="image/lemon.png" class="picture_2">
+        </article>
+        <article class="about__column">
+            <div class="about__pictures">
+                <img src="image/kiwi.png" class="p2_picture_2">
+                <img src="image/canteloupe.png" class="p2_picture_2">
+                <img src="image/lemon.png" class="p2_picture_2">
             </div>
-            <p class="text2_p2">
+            <p class="about__text right-align">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-        </div>
-    </div>
-    <div class="p3">
-        <h1 class="title3" id="p3">Portfolio</h1>
-        <div class="portfolio">
-            <p class="text_portfolio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        </article>
+    </section>
+
+    <section class="portfolio">
+        <h2 class="section__title" id="p3">Portfolio</h2>
+        <div class="portfolio_text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
-        <div class="card">
-            <div class="card1">
-                <div class="item_title1">
-                    <div class="field">
-                        <img src="image/field.png" class="field_image">
-                    </div>
-                    <div>
-                        <h2 class="item_h2">Item Title</h2>
-                    </div>
-                    <div>
-                        <p class="data"><time datatime>25.07.2019</time></p>
-                    </div>
-                    <div class="item_title_text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-                        </p>
-                    </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card__image">
+                    <img src="image/field.png">
                 </div>
+                <h3 class="card__title">Item Title</h3>
+                <time datatime class="date">25.07.2019</time>
+                <div class="card__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                    </p>
+                </div>
+
             </div>
-            <div class="card1">
-                <div class="item_title1">
-                    <div class="field">
-                        <img src="image/field.png" class="field_image">
-                    </div>
-                    <div>
-                        <h2 class="item_h2">Item Title</h2>
-                    </div>
-                    <div>
-                        <p class="data"><time datatime>25.07.2019</time></p>
-                    </div>
-                    <div class="item_title_text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-                        </p>
-                    </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="image/field.png">
                 </div>
+                <h3 class="card__title">Item Title</h3>
+                <time datatime class="date">25.07.2019</time>
+                <div class="card__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                    </p>
+                </div>
+
             </div>
-            <div class="card1">
-                <div class="item_title1">
-                    <div class="field">
-                        <img src="image/field.png" class="field_image">
-                    </div>
-                    <div>
-                        <h2 class="item_h2">Item Title</h2>
-                    </div>
-                    <div>
-                        <p class="data"><time datatime>25.07.2019</time></p>
-                    </div>
-                    <div class="item_title_text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-                        </p>
-                    </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="image/field.png">
                 </div>
+                <h3 class="card__title">Item Title</h3>
+                <time datatime class="date">25.07.2019</time>
+                <div class="card__text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                    </p>
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="p4">
-        <h1 class="title4" id="p4">Contact me</h1>
-        <div class="form">
-            <p class="text_contact">
+    </section>
+    <!--<section class="p4">
+        <h2 class="section__title--grey" id="p4">Contact me</h2>
+        <section class="contact_section">
+            <p class="contact_text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <div class="webform">
+            <article class="contact_webform">
                 <form>
-                    <p class="title_form">Name:</p>
-                    <input type="text" placeholder="Name" class="form_text">
-                    <p class="title_form">Email:</p>
-                    <input type="email" placeholder="Email" class="form_text">
-                    <p class="title_form">Website:</p>
-                    <input type="text" placeholder="Website" class="form_text">
-                    <div>
-                        <label class="save">
+                    <p class="contact_webform_title">Name:</p>
+                    <input type="text" placeholder="Name" class="contact_webform_text">
+                    <p class="contact_webform_title">Email:</p>
+                    <input type="email" placeholder="Email" class="contact_webform_text">
+                    <p class="contact_webform_title">Website:</p>
+                    <input type="text" placeholder="Website" class="contact_webform_text">
+                    <article>
+                        <label class="p4_webform_save">
                         Save my data <input type="checkbox">
                     </label>
                         <div>
-                            <button type="button" class="button_1 buttons">Send Form</button>
-                            <button type="reset" class="button_2 buttons">Reset Form</button>
+                            <button type="button" class="contact__button-yellow contact__buttons">Send Form</button>
+                            <button type="reset" class="contact__button-red contact__buttons">Reset Form</button>
                         </div>
-                    </div>
+                    </article>
                 </form>
+            </article>
+        </section>
+    </section>
+     <footer>
+        <section class="footers">
+            <div class="footer__info">
+                <article class="footer__info--col">
+                    <a href="#p4" class="footer__info--col--link">Contact me</a>
+                    <a href="#p3" class="footer__info--col--link">Portfolio</a>
+                    <a href="#p2" class="footer__info--col--link">About</a>
+                    <a href="#p1" class="footer__info--col--link">Home</a>
+                </article>
+                <article class="footer__info--col">
+                    <a href="#p4" class="footer__info--col--link">Contact me</a>
+                    <a href="#p3" class="footer__info--col--link">Portfolio</a>
+                    <a href="#p2" class="footer__info--col--link">About</a>
+                    <a href="#p1" class="footer__info--col--link">Home</a>
+                </article>
+                <article class="footer__info--col">
+                    <a href="#p4" class="footer__info--col--link">Contact me</a>
+                    <a href="#p3" class="footer__info--col--link">Portfolio</a>
+                    <a href="#p2" class="footer__info--col--link">About</a>
+                    <a href="#p1" class="footer__info--col--link">Home</a>
+                </article>
+                <article class="footer__info--col">
+                    <a href="#p4" class="footer__info--col--link">Contact me</a>
+                    <a href="#p3" class="footer__info--col--link">Portfolio</a>
+                    <a href="#p2" class="footer__info--col--link">About</a>
+                    <a href="#p1" class="footer__info--col--link">Home</a>
+                </article>
+                <article class="footer__info--col">
+                    <a href="#" class="footer__info--col--link">
+                        <img src="image/phone.png"> +38(068)000-00-00
+                    </a>
+                    <a href="#" class="footer__info--col--link">
+                        <img src="image/email.png"> vova@vova.com
+                    </a>
+                    <a href="#" class="footer__info--col--link">
+                        <img src="image/map.png"> Kyiv, 0036</a>
+                </article>
             </div>
-        </div>
-    </div>
-
-
-
+            <div class="footer__year">
+                <p>2019</p>
+            </div>
+        </section>
+    </footer> -->
 </body>
-<footer>
-    <div class="footers">
-        <div class="footer_info">
-            <div class="footer_info_1">
-                <a href="#p4" class="footer_menu">Contact me</a>
-                <a href="#p3" class="footer_menu">Portfolio</a>
-                <a href="#p2" class="footer_menu">About</a>
-                <a href="#p1" class="footer_menu">Home</a>
-            </div>
-            <div class="footer_info_1">
-                <a href="#p4" class="footer_menu">Contact me</a>
-                <a href="#p3" class="footer_menu">Portfolio</a>
-                <a href="#p2" class="footer_menu">About</a>
-                <a href="#p1" class="footer_menu">Home</a>
-            </div>
-            <div class="footer_info_1">
-                <a href="#p4" class="footer_menu">Contact me</a>
-                <a href="#p3" class="footer_menu">Portfolio</a>
-                <a href="#p2" class="footer_menu">About</a>
-                <a href="#p1" class="footer_menu">Home</a>
-            </div>
-            <div class="footer_info_1">
-                <a href="#p4" class="footer_menu">Contact me</a>
-                <a href="#p3" class="footer_menu">Portfolio</a>
-                <a href="#p2" class="footer_menu">About</a>
-                <a href="#p1" class="footer_menu">Home</a>
-            </div>
-            <div class="footer_info_2">
-                <a href="#" class="footer_menu">+38(068)000-00-00</a>
-                <a href="#" class="footer_menu">vova@vova.com</a>
-                <a href="#" class="footer_menu">Kyiv, 0036</a>
-            </div>
-        </div>
-        <div class="year">
-            <p>2019</p>
-        </div>
-    </div>
-</footer>
+
 
 </html>
